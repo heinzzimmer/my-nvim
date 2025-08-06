@@ -1,8 +1,6 @@
-## Neovim Setup Guide
+## Neovim Setup Guide (macOS)
 I’ll update the usage guide tonight.
 
-I use **Ghostty Terminal** for a sleek and minimal experience.  
-Download it here: [ghostty.org/download](https://ghostty.org/download)
 
 ### Step 1: Install Neovim  
 For macOS users, run:  
@@ -23,4 +21,18 @@ Then, navigate to the config folder and open the config file:
 ```bash
 cd ~/.config/nvim
 nvim init.lua
+```
+</br>
+
+### Optional
+#### I use **Ghostty Terminal** for a sleek and minimal experience and starship for shell prompt. 
+Download it here: [ghostty.org/download](https://ghostty.org/download)
+</br>
+
+```bash
+brew install starship
+```
+Add the following line to ```~/.zshrc``` 
+```bash
+eval "$(starship init zsh)"
 ```
