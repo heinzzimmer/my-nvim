@@ -1,4 +1,5 @@
 -- Bootstrap lazy.nvim
+--
 opts = {}
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -28,6 +29,7 @@ vim.o.cursorline = true
 vim.opt.tabstop = 2 -- how many spaces a TAB counts for
 vim.opt.shiftwidth = 2 -- how many spaces to use when auto-indenting
 vim.opt.expandtab = true -- convert tabs to spaces
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic" })
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -116,6 +118,25 @@ require("lazy").setup({
 			end,
 		},
 		{
+			"nvim-neo-tree/neo-tree.nvim",
+			branch = "v3.x",
+			dependencies = {
+				"nvim-lua/plenary.nvim",
+				"nvim-tree/nvim-web-devicons",
+				"MunifTanjim/nui.nvim",
+			},
+			opts = {
+				window = {
+					width = 30,
+				},
+				filesystem = {
+					filtered_items = {
+						visible = true,
+					},
+				},
+			},
+		},
+		{
 			"mason-org/mason-lspconfig.nvim",
 			opts = {},
 			dependencies = {
@@ -164,3 +185,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre", "BufEnter" }, {
 		require("conform").format({ bufnr = args.buf })
 	end,
 })
+
+vim.keymap.set("n", "<leader>b", ":Neotree toggle<CR>", { desc = "Toggle Neo-tree" })
+vim.keymap.set("n", "<leader>o", ":Neotree reveal<CR>", { desc = "Reveal file in Neo-tree" })
+vim.keymap.set("n", "<leader>t", "<C-w>l", { desc = "Focus editor window" })
