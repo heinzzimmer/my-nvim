@@ -66,7 +66,6 @@ require("lazy").setup({
 						enable = true,
 						additional_vim_regex_highlighting = false,
 					},
-					autotag = { enable = true },
 				})
 			end,
 		},
@@ -127,7 +126,7 @@ require("lazy").setup({
 			},
 			opts = {
 				window = {
-					width = 30,
+					width = 20,
 				},
 				filesystem = {
 					filtered_items = {
