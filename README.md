@@ -1,3 +1,5 @@
+![alt text](https://github.com/heinzzimmer/my-nvim/blob/main/thumbnail.png)
+
 ## Installation 🌕
 I use ghostty terminal.
 
