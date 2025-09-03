@@ -64,7 +64,6 @@ window-padding-x = 0
 window-padding-y = 0
 window-padding-color = extend
 ```
-##### Directory ```~/.config/ghostty/config```
-
+https://ghostty.org/docs/config
 
 
