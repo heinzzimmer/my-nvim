@@ -19,35 +19,43 @@ nvim .
 ##### Directory ```~/.config/nvim```
 
 ## Usage 🌕
-#### Package Sync
+#### Plugin Manager - lazy
 ```zsh
 :Lazy
 ```
+https://github.com/folke/lazy.nvim
 
-#### Fuzzy Finder
+#### Fuzzy Finder - telescope
 ```zsh
 space + ff (Find Files)
 space + fg (Live Grep)
 ```
-
-#### Toggle Sidebar
+https://github.com/nvim-telescope/telescope.nvim
+#### Toggle Sidebar - neoTree
 ```zsh
 space + e 
 others (WIP)
 ```
+https://github.com/nvim-neo-tree/neo-tree.nvim
 
-## Package List - WIP 🌙
+#### Comment/Uncomment Code
+```zsh
+gcc
+```
+
+## Plugin List - WIP 🌙
 - conform (Code Formatter)
 - blink.cmp (Autocomplete)
 - vimLSP (LSP)
 - lualine
+- mini
 - treesitter
 - telescope (Fuzzy Finder)
 - neotree (File Tree)
 - solarized (Theme)
 - copilot (will update later)
 
-## My Ghostty Config
+## My Ghostty Config 🌕
 ```zsh
 font-size = 20
 window-step-resize = true
