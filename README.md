@@ -1,3 +1,4 @@
+![alt text](https://github.com/heinzzimmer/my-nvim/blob/main/thumbnail-2.png)
 ![alt text](https://github.com/heinzzimmer/my-nvim/blob/main/thumbnail.png)
 
 ## Installation 🌕
