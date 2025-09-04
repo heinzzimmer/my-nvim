@@ -31,7 +31,7 @@ space + ff (Find Files)
 space + fg (Live Grep)
 ```
 https://github.com/nvim-telescope/telescope.nvim
-#### Toggle Sidebar - neoTree
+#### Sidebar - neoTree
 ```zsh
 space + e 
 others (WIP)
