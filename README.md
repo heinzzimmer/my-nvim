@@ -1,6 +1,4 @@
 ![alt text](https://github.com/heinzzimmer/my-nvim/blob/main/thumbnail-2.png)
-![alt text](https://github.com/heinzzimmer/my-nvim/blob/main/thumbnail.png)
-
 ## Installation 🌕
 I use ghostty terminal.
 
@@ -19,6 +17,7 @@ nvim .
 ```
 ##### Directory ```~/.config/nvim```
 
+![alt text](https://github.com/heinzzimmer/my-nvim/blob/main/thumbnail.png)
 ## Usage 🌕
 #### Plugin Manager - lazy
 ```zsh
